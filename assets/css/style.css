@@ -89,7 +89,7 @@ header nav ul div li a
 .hero-container
     {
         display: flex;
-        background-color: var(--deep-purple);
+        background-color: var(--indigo);
         position: absolute;
         bottom: 8px;
         right: 75px;
@@ -99,27 +99,45 @@ header nav ul div li a
         padding: 0px 10px 0px 10px;
     }
 
-.about div
+.about
     {
-        position: relative;
-        
-        font-size: 25px; 
-        padding-top: 25px; 
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px 125px 100px 125px;
+        padding-bottom: 50px;
+        width: 80%;
     }
 
-.item-1
+.about h1
     {
-        line-height: 1;
-        width: 80%;
-        font-size: 20px;
-        margin: 0 auto 0 auto;
+        color: var(--blush);
+        font-size: 45px;
+        justify-content: space-between;
+        border-right: 3px solid var(--blush);
+        padding-bottom: 100px;
+        padding-right: 10px;
+        align-items: flex-start;
     }
 
-.item-2
+
+.about div 
     {
-        padding-top: 30px;
-        line-height: 1;
-        width: 80%;
-        font-size: 20px;
-        margin: 0 auto 0 auto;
+        display: block;
+        flex: 2 70%;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
+
+
+.about p 
+    {
+        font-size: 19px;
+        width: 95%;
+        align-items: center;
+        color: var(--blush);
+        padding-left: 45px;
+    }
+
+
+
+
