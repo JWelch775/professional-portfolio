@@ -20,7 +20,6 @@ body
 /* Header Style Start*/
 header
     {
-        top: 0;
         background-color: var(--deep-purple);
         justify-content: space-between;
         display: flex;
@@ -30,11 +29,12 @@ header
 
 .name-box
     {
+        padding-right: 25px;
         display: flex;
         flex-wrap: wrap;
-        background-color: var(--indigo);
+        background-color: var(--deep-purple);
         float: left;
-        border: 1px solid var(--indigo);
+        border: 1px solid var(--blush);
         border-radius: 3px;
     }
 
@@ -89,7 +89,7 @@ header nav ul div li a
 .hero-container
     {
         display: flex;
-        background-color: var(--indigo);
+        background-color: var(--deep-purple);
         position: absolute;
         bottom: 8px;
         right: 75px;
@@ -97,8 +97,21 @@ header nav ul div li a
         font-family:Helvetica, sans-serif;
         color: var(--blush);
         padding: 0px 10px 0px 10px;
-        border: 1px solid var(--indigo);
+        border: 1px solid var(--blush);
         border-radius: 2px;
+    }
+
+/* self image box*/
+.image-box
+    {
+        height: 500px;
+        width: 25%;
+        margin: 50px auto auto auto;
+        border: solid 4px var(--indigo);
+        border-radius: 3px;
+        background-image: url(../images/Justin-Welch.jpg);
+        background-size: cover;
+        background-position: top;
     }
 
 /* about section style start*/
@@ -134,7 +147,7 @@ header nav ul div li a
 
 .about p 
     {
-        font-size: 19px;
+        font-size: 25px;
         width: 95%;
         align-items: center;
         color: var(--blush);
@@ -152,13 +165,13 @@ header nav ul div li a
         display: flex;
         margin: 20px 30px 20px 198px;
     }
-.work-grid-wrapper h1
+.work-grid-wrapper div h1
     {
         color: var(--blush);
         font-size: 45px;
         border-right: 3px solid var(--blush);
         margin: 10px 60px 10px 10px;
-        padding-bottom: 100px;
+        padding-bottom: 575px;
         padding-right: 10px;
     }
 
@@ -195,7 +208,7 @@ header nav ul div li a
         margin-right: 700px;
         margin-top: 320px;
         padding: 10px 5px 15px 5px;
-        border: 4px solid var(--indigo);
+        border: 1px solid var(--indigo);
         border-radius: 2px;
     }
 
@@ -204,9 +217,10 @@ header nav ul div li a
     {
         cursor: pointer;
         background-image: url(../images/horiseon-img.png);
-        background-color: rgba(rgb(196, 121, 78) 0.3);
+        background-color: var(--deep-purple);
         background-size: cover;
-        border: 4px solid var(--indigo);
+        border: 4px solid var(--deep-purple);
+        border-radius: 2px;
         grid-column: 1 / span 2;
         grid-row: 3 / span 1;
     }
@@ -312,3 +326,216 @@ header nav ul div li a
 
 
 /* contact me section style*/
+.my-info
+    {
+        background-color: var(--deep-purple);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px 10px 0px;
+    }
+
+.contact-me
+    {
+        margin: 10px 10px 10px 96px;
+        font-size: 22px;
+        border-right: 3px solid var(--blush);
+        padding-right: 10px;
+        padding-bottom: 100px;
+        color: var(--blush);
+    }
+
+.contact-nav ul
+    {
+        margin: 30px 0px 0px 45px;
+    }
+
+.contact-nav ul li
+    {
+        display: inline;
+        font-size: 30px;
+    }
+
+.phone, .linkdin, .email
+    {
+        padding: 0px 100px 0px 50px;
+        color: var(--blush);
+    }
+
+.phone a, .linkdin a, .email a
+    {
+        text-decoration: none;
+        color: var(--blush);
+    }
+
+    @media screen and (max-width:980px)
+    {
+        header
+            {
+                position: relative;
+                padding-bottom: 0;
+                justify-content: center;
+                margin: auto;
+            }
+        
+        .name-box
+            {
+                border: none;
+                width: 100%;
+                text-align: center;
+                margin-left: 70px;
+            }
+        
+         .nav-about ul
+            {
+                margin-top: 20px;
+                width: 100%;
+                text-align: center;
+            }
+        
+            .contact-me, .my-info ul
+            {
+                text-align: center;
+                width: 100%;
+                margin: auto;
+                border: none;
+            }
+
+            .contact-me
+                {
+                    border-bottom: 3px solid var(--blush);
+                    padding-bottom: 5px;
+                }
+
+            .contact-nav
+                {
+                    padding-top: 30px;
+                    margin: auto;
+                }
+
+        .hero-img
+            {
+                margin: auto;
+                width: 100%;
+            }
+        .hero-container
+            {
+                text-align: center;
+            }
+        .about
+            {
+                width: 80%;
+            }
+
+        .work-grid-container
+            {
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+            }
+
+        .work-grid-wrapper div h1
+            {
+                padding-bottom: 1166px;
+            }
+
+        .run-buddy
+        {
+            width: 80%;
+            height: 30%;
+        }
+
+        .run-text
+            {
+                margin-right: 100px;
+            }
+    
+    }
+    
+    
+    @media screen and (max-width:768px)
+    {
+        
+        .name-box
+            {
+                margin: 0px 100px 0px 0px;
+            }
+        
+        .nav-about a, .nav-work a, .nav-contact a, .nav-resume a
+            {
+                font-size: 25px;
+                margin: auto;
+            }
+
+        .hero-container
+            {
+                padding-left: 45px;
+                width: 80%;
+            }
+
+        .image-box
+            {
+                width: 100%;
+            }
+
+
+        .about
+            {
+                margin: auto;
+                padding-top: 25px;
+            }
+        .about h1 
+            {
+                margin: auto;
+                border: none;
+                padding-bottom: 10px;
+            }
+
+        .projects
+            {
+                margin: auto;
+            }
+
+        .work-grid-wrapper 
+            {
+                margin: auto;   
+            }
+        
+       .work-grid-container
+            {
+                justify-content: space-between;
+                margin: auto;
+            }
+
+
+    }
+
+@media screen and (max-width: 575px)
+    {
+       header
+            {
+                margin: auto;
+                justify-content: space-evenly
+            }
+
+        .name-box
+            {
+                margin: auto;
+            }
+        
+        .work-grid-wrapper
+            {
+                margin: auto;
+            }
+        
+        .work-grid-container
+            {
+                margin: auto;
+                padding-right: 25px;
+            }
+
+        .run-buddy
+            {
+                width: 100%;
+            }
+    }
+        
